@@ -20,7 +20,7 @@
 h1, h2, h3, h4, h5{
     color: var(--primary-color);
     font-weight: 650;
-    line-height: 5.5rem;
+    line-height: 4.5rem;
     word-spacing: 0.2rem;
     font-size: 4rem;
 }
@@ -36,6 +36,16 @@ input.search {
     background-color: var(--gray-background);
 }
 
+p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0px;
+    line-height: 4.5rem;
+    color: var(--body-text-color);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.07rem;
+}
 
 /* navbar End */
 
@@ -50,3 +60,11 @@ input.search {
     margin-top: 12rem;
     /* margin-block-start: 2rem; */
   }
+
+  .btn-now {
+    padding: 1rem;
+    /* font-size: 4rem; */
+    border-radius: 7rem;
+    width: 12.5rem;
+    margin-top: 2rem;
+}
