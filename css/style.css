@@ -7,3 +7,46 @@
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
 }
+
+:root {
+    --primary-color: #111827;
+    --body-text-color: #4B5563;
+    --vibrant-color: #0EA5E9;
+    --border-color: #E5E7EB;
+    --default-background: #FFFFFF;
+    --gray-background: #F8F8F8;
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--primary-color);
+    font-weight: 650;
+    line-height: 5.5rem;
+    word-spacing: 0.2rem;
+    font-size: 4rem;
+}
+/* navbar start */
+
+input.search {
+    width: 30rem;
+    border: 1px solid #050202;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("/images/SVG.png") no-repeat 13px;
+    border-radius: 2rem;
+    background-color: var(--gray-background);
+}
+
+
+/* navbar End */
+
+.carousel {
+    height: 70vh; /* Full viewport height */
+    background: url('/images/hero-bg.png') center center / cover no-repeat;
+    /* background-attachment: fixed;
+    overflow: hidden; */
+  }
+
+  .carousel .margin-set{
+    margin-top: 12rem;
+    /* margin-block-start: 2rem; */
+  }
