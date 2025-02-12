@@ -59,7 +59,7 @@ p {
 
 
 /* Carousel Section Start */
-.carousel {
+.carousel-image{
     height: 70vh; /* Full viewport height */
     background: url('/images/hero-bg.png') center center / cover no-repeat;
     /* background-attachment: fixed;
