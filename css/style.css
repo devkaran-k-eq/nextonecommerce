@@ -24,6 +24,14 @@ h1, h2, h3, h4, h5{
     word-spacing: 0.2rem;
     font-size: 4rem;
 }
+
+
+/* .common-section-padding{
+    margin: 0 0 6rem 0;
+} */
+
+
+
 /* navbar start */
 
 input.search {
@@ -40,7 +48,7 @@ p {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0px;
-    line-height: 4.5rem;
+    line-height: 1.5rem;
     color: var(--body-text-color);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -49,22 +57,40 @@ p {
 
 /* navbar End */
 
+
+/* Carousel Section Start */
 .carousel {
     height: 70vh; /* Full viewport height */
     background: url('/images/hero-bg.png') center center / cover no-repeat;
     /* background-attachment: fixed;
     overflow: hidden; */
-  }
+}
 
-  .carousel .margin-set{
+.carousel .margin-set{
     margin-top: 12rem;
     /* margin-block-start: 2rem; */
-  }
+}
 
-  .btn-now {
+.btn-now {
     padding: 1rem;
     /* font-size: 4rem; */
     border-radius: 7rem;
     width: 12.5rem;
     margin-top: 2rem;
 }
+
+
+/* Carousel Section End */
+
+/* service Detail start */
+
+.set-border{
+    border-top: 2px solid var(--border-color);  
+    border-bottom: 2px solid var(--border-color); 
+    padding: 3rem 0;
+}
+
+.set-flex-itm-border{
+    border-right: 2px solid var(--border-color);
+}
+/* service Detail End */
