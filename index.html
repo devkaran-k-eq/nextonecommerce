@@ -18,16 +18,18 @@
 </head>
 
 <body>
+    <!-- navbar Section Start -->
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="container-fluid d-flex align-items-center">
             <a class="navbar-brand">
-                <img src="./images/logo.png" alt="NextEcommerce">
+                <img src="./images/small-logo.png" alt="NextEcommerce" class="d-lg-none d-sm-none">
+                <img src="./images/logo.png" alt="NextEcommerce" class="d-none d-lg-block d-sm-block">
             </a>
             <form class="d-flex mx-auto " role="search">
-                <input class="form-control me-2 search" type="search" placeholder="Search in products..."
-                    aria-label="Search">
-                <!-- <button class="btn btn-outline-success" type="submit"></button> -->
+                <input class="form-control me-2 search d-none d-lg-block" type="search"
+                    placeholder="Search in products..." aria-label="Search">
+                
             </form>
             <ul class="nav">
                 <li class="nav-item">
@@ -42,9 +44,58 @@
                 </li>
             </ul>
         </div>
+    </nav> -->
+
+    <!-- navbar Section End -->
+    <nav class="navbar ">
+        <div class="container-fluid d-flex flex-nowrap align-items-center">
+            <a class="navbar-brand">
+                <img src="./images/small-logo.png" alt="NextEcommerce" class="d-lg-none d-sm-none">
+                <img src="./images/logo.png" alt="NextEcommerce" class="d-none d-lg-block d-sm-block">
+            </a>
+            <form class="d-flex " role="search">
+                <input class="form-control me-2 search" type="search"
+                    placeholder="Search in products..." aria-label="Search">
+                <!-- <button class="btn btn-outline-success" type="submit"></button> -->
+            </form>
+
+            <ul class="nav ">
+                <li class="nav-item d-none d-lg-block d-sm-block">
+                    <a href="#" class="nav-link text-secondary">
+                        <img src="./images/user-btn.png" alt="User" style="width: 35px;" class="img-fluid">
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block d-sm-block">
+                    <a href="#" class="nav-link text-secondary">
+                        <img src="./images/cart.png" alt="Cart" style="width: 35px;" class="img-fluid">
+                    </a>
+                </li>
+            </ul>
+
+
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- <form class="d-flex mx-auto">
+                    <input class="form-control me-2 search" type="search" placeholder="Search in products..." aria-label="Search">
+                </form> -->
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary">
+                            <img src="./images/user-btn.png" alt="User" style="width: 35px;" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-secondary">
+                            <img src="./images/cart.png" alt="Cart" style="width: 35px;" class="img-fluid">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
-
+    
     <!-- Carousel Section Start -->
 
 
@@ -60,10 +111,10 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active  margin-set">
-                    <div class="container">
+                <div class="carousel-item active  margin-set ">
+                    <div class="container ">
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-md-4 col-lg-9">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-9 change-flex-768">
 
                                 <p class="">Starting from: $24.99</p>
                                 <h1>Classic Comfort <br> Drawstring Joggers</h1>
@@ -78,9 +129,11 @@
                 <div class="carousel-item margin-set">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-md-4 col-lg-9">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-9 change-flex-768">
                                 <p class="">Starting from: $33.00</p>
                                 <h1>Classic Blue, <br> Baseball Cap</h1>
+
+                               
                                 <div>
                                     <button class="text-capitalize btn btn-dark btn-now">Explore now! &nbsp; <i
                                             class="fa-solid fa-magnifying-glass"></i></button>
@@ -92,9 +145,9 @@
                 <div class="carousel-item margin-set">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-md-4 col-lg-9">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-9 change-flex-768">
                                 <p class="">Starting from: $99.99</p>
-                                <h1> Classic Red <br> Pullover Hoodie Collection</h1>
+                                <h1> Classic Red  Pullover <br>Hoodie Collection</h1>
                                 <div>
                                     <button class="text-capitalize btn btn-dark btn-now">Explore now! &nbsp; <i
                                             class="fa-solid fa-magnifying-glass"></i></button>
@@ -125,7 +178,7 @@
     <!-- Service Detail Start -->
     <section class="common-section-padding set-border">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-4 g-4">
 
                 <!-- Item 1 -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center set-flex-itm-border ps-5">
@@ -172,22 +225,23 @@
     <!-- Service Detail End -->
 
     <!-- Product Recommendation Start -->
-    
-    
-        <section class="common-section-padding">
-            <div class="container-fluid">
-                <div class="row">
-                    <h2 class="fs-3">Recommendations. <span style="color: #616e80;"> Best matching products for you</span>
-                    </h2>
-                </div>
-    
-    
-    
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                    <div class="carousel-inner">
 
-                        <!-- slide-1 -->
-                      <div class="carousel-item active">
+
+    <section class="common-section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                
+                <h2 class="fs-3">Recommendations. <span style="color: #616e80;" class="d-none d-lg-inline-flex d-md-inline-flex d-xs-none"> Best matching products for you</span>
+                </h2>
+            </div>
+
+
+
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+
+                    <!-- slide-1 -->
+                    <div class="carousel-item active">
                         <div class="container-fluid">
                             <div class="row row-cols-1 row-cols-lg-4 g-4">
                                 <div class="col">
@@ -195,7 +249,7 @@
                                         <img src="./images/product/product-10.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Grey Hooded Sweatshirt
-    
+
                                                 <span class="float-end"> $90</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -209,7 +263,7 @@
                                         <img src="./images/product/product1.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Olive Chino Shorts
-    
+
                                                 <span class="float-end"> $84</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -223,7 +277,7 @@
                                         <img src="./images/product/product-2.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Black Baseball Cap
-    
+
                                                 <span class="float-end"> $58</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -237,7 +291,7 @@
                                         <img src="./images/product/product-3.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Red Baseball Cap
-    
+
                                                 <span class="float-end"> $35</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -246,13 +300,13 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                             </div>
                         </div>
-                      </div>
-    
-                      <!-- slide-2 -->
-                      <div class="carousel-item">
+                    </div>
+
+                    <!-- slide-2 -->
+                    <div class="carousel-item">
                         <div class="container-fluid">
                             <div class="row row-cols-1 row-cols-lg-4 g-4">
                                 <div class="col">
@@ -260,7 +314,7 @@
                                         <img src="./images/product/product-4.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Blue Baseball Cap
-    
+
                                                 <span class="float-end"> $86</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -274,7 +328,7 @@
                                         <img src="./images/product/product-5.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Comfort Fit Joggers
-    
+
                                                 <span class="float-end">$25</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -288,7 +342,7 @@
                                         <img src="./images/product/product-6.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Comfort Drawstring Joggers
-    
+
                                                 <span class="float-end"> $79</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -302,7 +356,7 @@
                                         <img src="./images/product/product-7.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Red Jogger Sweatpants
-    
+
                                                 <span class="float-end"> $98</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -311,13 +365,13 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                             </div>
                         </div>
-                      </div>
+                    </div>
 
-                      <!-- slide-3 -->
-                      <div class="carousel-item">
+                    <!-- slide-3 -->
+                    <div class="carousel-item">
                         <div class="container-fluid">
                             <div class="row row-cols-1 row-cols-lg-4 g-4">
                                 <div class="col">
@@ -325,7 +379,7 @@
                                         <img src="./images/product/product-8.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Navy Blue Baseball Cap
-    
+
                                                 <span class="float-end"> $61</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -339,7 +393,7 @@
                                         <img src="./images/product/product-7.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Red Jogger Sweatpants
-    
+
                                                 <span class="float-end"> $98</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -353,7 +407,7 @@
                                         <img src="./images/product/product-10.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Black Automatic Watch
-    
+
                                                 <span class="float-end"> $90</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
@@ -367,52 +421,54 @@
                                         <img src="./images/product/product-11.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title fw-bolder">Classic Heather Gray Hoodie
-    
+
                                                 <span class="float-end">$69</span>
                                             </h6>
                                             <p class="card-text small text-muted text-nowrap me-2">Accessories <s
-                                                    class="float-end">$70.00</s> </p>
+                                                    class="float-end">$</s> </p>
                                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                         </div>
                                     </div>
                                 </div>
-    
+
                             </div>
                         </div>
-                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </section>
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
     <!-- Product Recommendation End -->
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
